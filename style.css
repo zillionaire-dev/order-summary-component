@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: var(--pale-blue);
+  background-image: url(/images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 16px;
+}
+
+p {
+  color: var(--desaturated-blue);
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+h1,
+h3 {
+  color: var(--dark-blue);
+}
+
+.container {
+  background-color: white;
+  text-align: center;
+  border-radius: 15px;
+  overflow-y: hidden;
+  max-width: 400px;
+  box-shadow: 0px 10px 15px #bdcaff;
+}
+
+.container .hero-img {
+  width: 100%;
+}
+
+.text-content {
+  padding: 1.2rem;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+}
+
+.container .plan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0;
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.plan-sec {
+  display: flex;
+
+}
+
+.price {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.price h3,
+.price p {
+  font-size: 15px;
+}
+
+
+.btn-change {
+  border: none;
+  background-color: transparent;
+  color: var(--bright-blue);
+  font-weight: 900;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn-change:hover {
+  text-decoration: none;
+}
+
+
+.btn-primary {
+  width: 100%;
+  border: none;
+  background-color: var(--bright-blue);
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 0px 10px 15px #bdcaff;
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
+.btn-secondary {
+  border: none;
+  background-color: transparent;
+  color: var(--desaturated-blue);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  color: var(--dark-blue);
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(/images/pattern-background-desktop.svg);
+  }
+}
